@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title> Vie's Tea </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="rest.css">
+<body>
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink w3-padding-large w3-hover-pale-green">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink w3-padding-large w3-hover-pale-green">Drinks</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Nutella Banana Muffins</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+      <p class="w3-text-grey">Freshly baked muffins made from ripe bananas and nutella </p>
+      <hr>
+
+      <h1><b>Lemon Blueberry Shortbread Cookies</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$.50 each</span></h1>
+      <p class="w3-text-grey">Baked fresh they're buttery and sweet and loaded with flavour and blueberries</p>
+      <hr>
+
+      <h1><b>Bangin' Breakfast Bowl</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.00</span></h1>
+      <p class="w3-text-grey">Traditionaly made with scrambled eggs, breakfast potatos, fresh herbs and bacon (Ingrediants can be altered)</p>
+      <hr>
+
+      <h1><b>Custom Croissant</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Freshly baked croissant, can be ordered with or without any toppings like cream cheese</p>
+      <hr>
+
+      <h1><b>Mediterranean Flatbread</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$15.00</span></h1>
+      <p class="w3-text-grey">Traditional Flatbread topped with any toppings and baked to perfection</p>
+      <hr>
+
+      <h1><b>Italian Biscotti</b> <span class="w3-tag w3-green w3-round">New Flavours</span><span class="w3-right w3-tag w3-dark-grey w3-round">$.50 each</span></h1>
+      <p class="w3-text-grey">From Expresso, to our famous Holiday Biscotti, we have an extensive biscotti collection. Ask the waiter for more information</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Tea</b> <span class="w3-tag w3-blue w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey">A wide variaty of delicious Teas are available. Ask the waiter for more information</p>
+      <hr>
+
+      <h1><b>Coffee</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey">Freshly ground beans to order. Ask the waiter for more information</p>
+      <hr>
+
+      <h1><b>Hot Chocolate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey">Creamy and sweet, made from fine cocoa powder and fresh milk brewed, stirred and steamed.</p>
+      <hr>
+
+      <h1><b>Ice Tea</b> <span class="w3-tag w3-blue w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey">A cold refeshing beverage. Ask the waiter for more information</p>
+    </div><br>
+
+  </div>
+</div>
+<script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-pale-green", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-pale-green";
+}
+document.getElementById("myLink").click();
+</script>
+
+<div class="w3-container w3-blue-grey">
+  <p>The following images are items that are currently on the menu</p>
+</div>
+
+<div class="w3-content w3-display-container w3-blue-grey">
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://s-media-cache-ak0.pinimg.com/564x/b0/4b/a4/b04ba4a0c552aa682656ce9251454e37.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+    Banana Nutella Muffins
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://s-media-cache-ak0.pinimg.com/564x/46/db/df/46dbdfedb8a33cb13a972404283acb7e.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+    Lemon Blueberry Shortbread Cookies
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="http://cookieandkate.com/images/2016/06/tex-mex-breakfast-bowl.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+    Bangin' Breakfast Bowl
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://www.halfbakedharvest.com/wp-content/uploads/2016/03/Blueberry-Muffin-Granola-Greek-Yogurt-Breakfast-Bowl-4.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+    Frutti Bangin' Breakfast Bowl
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://s-media-cache-ak0.pinimg.com/564x/ca/1b/32/ca1b32f80fb151c7835e2ea72ca882d2.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+    Custom Croissants
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://32lxcujgg9-flywheel.netdna-ssl.com/wp-content/uploads/2014/12/mediterranean-flatbread-2.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+   	Mediterranean Flatbread
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://www.littlebroken.com/wp-content/uploads/2015/12/Dark-Chocolate-Cranberry-Almond-Biscotti-19.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+   	Italian Biscotti
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://s-media-cache-ak0.pinimg.com/564x/0c/2b/af/0c2baf3fe3da7298eeaa5f3173703739.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+   	Tea     </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://s-media-cache-ak0.pinimg.com/564x/18/39/59/183959004841434cb6a46fc93df49b0b.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+   	Coffee
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://s-media-cache-ak0.pinimg.com/564x/0d/d1/66/0dd166ffd41e252409e4a064343585c4.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+   	Hot Chocolate
+  </div>
+</div>
+
+<div class="w3-display-container mySlides w3-blue-grey">
+  <img src="https://i.ytimg.com/vi/YK82Wf7jeLA/maxresdefault.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-xxlarge w3-container w3-padding-64 w3-black" style="font-size:800px">
+   	Ice Tea
+  </div>
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+body, html {
+  height: 100%;
+  font-family: "Amatic SC", sans-serif;
+  font-size:50px;
+}
+.h1 {
+  font-family:"Amatic SC", sans-serif;
+  font-size: 64px
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image:
+url(http://www.magic4walls.com/wp-content/uploads/2013/12/Cup-Splash-Warm-Coffee.jpg);
+  min-height: 75%;
+}
+.menu {
+    display: none;
+}
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6,p {font-family: "Amatic SC", sans-serif
+}
